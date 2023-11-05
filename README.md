@@ -48,6 +48,27 @@ To run this project, you will require the following Python libraries:
 
 You can install these libraries using `pip install`.
 
+## How the Code Works
+
+### Step 1: Data Extraction
+The code starts by importing necessary libraries such as `requests`, `BeautifulSoup`, `pandas`, `re`, `matplotlib`, and `seaborn`. It utilizes `requests.get` to fetch the Wikipedia page on GDP, and then, `BeautifulSoup` helps parse the HTML content.
+
+### Step 2: Data Structuring
+The code identifies the GDP data table on the Wikipedia page using BeautifulSoup and stores it in a structured format within a Pandas DataFrame. It cleans and organizes the data by removing unnecessary characters, converting values to numeric formats, and handling missing data.
+
+### Step 3: Data Visualization
+#### Visualization 1: Top N Countries by GDP (IMF Forecast)
+The code generates a bar plot showcasing the top N countries by GDP as forecasted by the International Monetary Fund (IMF) using the extracted and cleaned data.
+
+#### Visualization 2: GDP by UN Region
+Another bar plot is created to display the total GDP for each United Nations (UN) region, sorted in descending order based on IMF forecasted values.
+
+#### Visualization 3: GDP Estimates Over Time for Selected Countries
+Line plots are plotted for selected countries, illustrating their GDP estimates over time. The data includes forecasts by the IMF, estimates by the World Bank and the United Nations.
+
+#### Visualization 4: GDP Trends Over the Years
+A line plot is generated to showcase the mean GDP trends over the years for IMF, World Bank, and United Nations estimates.
+
 ## Summary
 
 This project involves scraping GDP data from a Wikipedia page and utilizing Python for data curation and visualization. It aims to provide comprehensive insights into GDP trends, the top countries by GDP, and regional GDP distributions. The visualizations created aid in understanding global economic patterns and interpreting the GDP data effectively.
