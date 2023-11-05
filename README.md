@@ -54,7 +54,7 @@ You can install these libraries using `pip install`.
 The code starts by importing necessary libraries such as `requests`, `BeautifulSoup`, `pandas`, `re`, `matplotlib`, and `seaborn`. It utilizes `requests.get` to fetch the Wikipedia page on GDP, and then, `BeautifulSoup` helps parse the HTML content.
 
 ### Step 2: Data Structuring
-The code identifies the GDP data table on the Wikipedia page using BeautifulSoup and stores it in a structured format within a Pandas DataFrame. It cleans and organizes the data by removing unnecessary characters, converting values to numeric formats, and handling missing data.
+The code identifies the GDP data table on the Wikipedia page using BeautifulSoup and stores it in a structured format within a Pandas DataFrame. It cleans and organizes the data by removing unnecessary characters, converting values to numeric formats, and handling missing data. Descriptive statistics are then printed.
 
 ### Step 3: Data Visualization
 #### Visualization 1: Top N Countries by GDP (IMF Forecast)
